@@ -46,7 +46,7 @@ public class DumbMovieContent {
     private static final String game3Weblink = "https://www.gamespot.com/nba-2k20/reviews/";
 
     private static final String game4Title = "Far Cry 5";
-    private static final String game4Description = "Being stuck in";
+    private static final String game4Description = "Try to survive in Hope County, Montana where there are crazed cultists trying to stop you at every turn. Your goal is to venture out and find supplies and friends to help on your journey to rescue your friends, defeat the leader of the cult, and ave the rest of Hope County";
     private static final String game4Year = "2018";
     private static final String game4Image = "farcry";
     private static final String game4Weblink = "https://far-cry.ubisoft.com/farcry5/en-us/game-info/story-and-characters.aspx";
