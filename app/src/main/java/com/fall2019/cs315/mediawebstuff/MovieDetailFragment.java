@@ -1,6 +1,8 @@
 package com.fall2019.cs315.mediawebstuff;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -61,6 +63,10 @@ public class MovieDetailFragment extends Fragment {
 
                 // CS315: DO THIS
                 // TODO: Set the image based upon the string we got stashed in getMovieImage()
+                Resources res = getResources();
+                String movieDrawableName = mItem.getMovieImage();
+                int resID = res.getIdentifier(movieDrawableName, "drawable", getContext().getPackageName());
+                thisMovieImageView.setImageResource(resID);
 
             }
 
@@ -71,11 +77,14 @@ public class MovieDetailFragment extends Fragment {
 
                     // CS315: DO THIS
                     // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
-                    // TODO: hint - you need to establish a new intent and launch a new Activity
-                    // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
 
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    // TODO: hint - you need to establish a new intent and launch a new Activity
+
+                    // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
+                    Intent intent = new Intent(getActivity(), WebActivity.class);
+                    intent.putExtra(WebActivity.URL, mItem.getMovieWeblink());
+                    startActivity(intent);
+
                 }
             });
         }

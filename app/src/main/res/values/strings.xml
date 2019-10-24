@@ -3,8 +3,8 @@
     <string name="title_movie_detail">Media Detail</string>
 
 
-<!--    CS315: DO THIS-->
-<!--    TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example-->
+    <!--    CS315: DO THIS-->
+    <!--    TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example-->
 
 
     <string name="example_1_title">Generic Rom Com</string>
@@ -19,5 +19,11 @@
     <string name="example_2_image">genericaction</string>
     <string name="example_2_url">http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots</string>
 
-    
+    <string name="game1Title">STAR WARS Battlefront II</string>
+    <string name="game1Description"> </string>
+    <string name="game1Year">2017</string>
+    <string name="game1Image">starwarsbf2</string>
+    <string name="game1URL">https://www.starwars.com/games-apps/star-wars-battlefront-ii</string>
+
+
 </resources>
